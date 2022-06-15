@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+html, body{
+    height: 100%;
+
+}
+html{
+    background-color: #fff9e6;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #B7AC72;
+    font-family: 'Square Peg', cursive; 
+    margin: 0 auto;
+    
+}
+ul{
+    list-style: none;
+    
+}
+a:hover{
+    font-weight: bolder;
+    color: lightyellow;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*header*/
+.menuFijo{
+    background-color: #FFF9E6;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/*enlaces superiores derechos*/
+nav ul.redesLista{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-left: 4cm;
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+          
+}
+ul.redesLista:last-child{
+    margin-right: 45px;
+}
+
+img.redes{
+    width: 30px;
+    padding-right: 4px;
+    margin-right: 4px;
+}
+.redes{
+    font-size: large;
+    font-weight: bolder;
+    
+}
+.redesLista li:first-child{
+    margin-left: 94%;
+}
+div.p-2:last-of-type{
+    margin-right:30px;
+}
+ul.dropdown-menu{
+    font-size: 26px;
+}
+/*menú desplegable izquierda*/
+
+button.dropown{
+    width: 100px;
+    font-size: 28px;
+    background-color: #FFF9E6;
+    border-color: #ece7d6;
+    margin-left: 25px;
+}
+
+/*main*/
+#Main{
+    width: 80%;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+section.mainLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+      
+}    
+
+div.flexDiv{
+    display:flex;
+    flex-direction: row;
+    border-color: none;
+    --bs-card-border-width: 0;
+}
+.card-img-overlay h5 a{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    margin: -25px 0 0 -25px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.divTitulo{
+    
+    width: 75%;
+    height: 395px;
+    margin: 0 auto;
+    background-image: url(./img/mainclemat.png);  
+
+
+}
+
+img.mainImg{
+    width: 100px;
+}
+h1{
+    font-size: 46px;
+    font-weight: bolder;
+}
+.divTitulo h3{
+    font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+    color: black;
+    
+}
+/*footers*/
+footer{
+    background-color: rgb(97, 96, 96);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer ul{
+    color: white;
+}
+
+/*agrego transition*/
+h5.card-title a{
+    transition: 2s;
+}
+  
+h5.card-title a:hover{
+    font-size: 28   px;
+    font-weight: bolder;
+    color: lightyellow;
+}
+
+/*página Productos*/
+.bodyProductos{
+    background-color: #EAC867;
+    margin:0 auto; 
+
+}
+
+div h2{
+    display: flex;
+    justify-content: center;
+}
+div.celulares{
+    display: none;
+}
+section.libros, section.productos{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 35%;
+    margin: 0 auto;
+}
+
+.card-img-top{
+    height: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 4fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        ;
+    }
+    img.mainImg{
+        width: 100%;
+        
+    }
+    .redesLista li:first-child{
+        margin-left: 40%;
+    }
+
+   
+    main#Main{
+        grid-area: main;
+        display: flex;
+        flex-direction: row;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "quienes producto"
+        "clases contacto";  
+        
+    }
+    main#main:first-child{
+        grid-area: quienes;
+        
+    }
+    main#main:nth-child(2){
+        grid-area: producto;
+        
+    }
+    main#main:nth-child(3){
+        grid-area: clases;
+        
+    }
+    main#main:last-child{
+        grid-area: contacto;
+        
+    }
+
+    section.divTitulo{
+        grid-area: section;
+        display: none;
+    }    
+    footer#pie{
+        display: none;
+    }
+    ul.dropDown{
+        grid-area: drop;
+        margin-top: 2px;
+        margin-bottom: 1px;
+        display: none;
+    }
+    nav.menuFijo{
+        grid-area: header;
+
+    }
+    section.mainLinks{
+        display: none;
+    }
+    .card-img-overlay h5 a{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        margin: -25px 0 0 -25px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+
+    section.mainImg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      }
+    span a img{
+        width:200px;
+    }
+    .menuFijo{
+        background-color: #B7AC72;
+    }
+    .bodyClases{
+        background-color: #FFF9E6;
+    }
+    nav.menuFijoC{
+        display: none;
+    }
+    
+
+    /*responsive Clases*/
+    body.bodyClases{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 2fr 1fr;
+        grid-template-areas: 
+        "header"
+        "article"
+        "footer"
+        ;
+    }
+
+    footer.footerClas{
+        grid-area: footer;
+        background-image: url(../piedepagMobileClases.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    article.Clases{
+        grid-area: article;
+    }
+    footer.footerClas ul{
+        display: none;
+    }
+    footer.footerClas h6{
+        display: none;
+    }
+
+    .clases {
+        width: 100%;
+        height: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    section.mensuales, section.talleres{
+        width: 100%;
+        text-align: center;
+    }
+    section.mensuales{
+        background-image: url(./img/rectanguloarticleMobile.png);
+        background-size: cover;
+    }
+    section.talleres{
+        background-image: url(./img/rectanglearticle2Mobile.png);
+        background-size: cover;
+        
+    }
+    div.imagenMobile{
+        grid-area: header;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    div.celulares{
+        display: inline;
+    }
+    div.productoDesktop, div.otrosDesktop{
+        display: none;
+    }
+    div.h2{
+        display: none;
+    }
+    section.libros{
+        display: none;
+    }
+    section.productos{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {}

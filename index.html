@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Etiquetas Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de pestaña -->
+    <title>Clemat Yoga</title>  
+
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+
+  <link rel="stylesheet" href="style.css">
+   
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+ </style>
+</head>
+
+<body>
+    
+     
+     <!--menú/ buscar y del otro lado registrarse/ ingresar-->
+     
+     <header>
+       <nav class="menuFijo" >
+          <div>
+           <!--enlaces a redes sociales/ margen superior derecho-->
+            <ul class="redesLista">
+              <li><a href="https://www.instagram.com/p/CaUgu_6rD2r/?utm_source=ig_web_copy_link" target="_blank"><img src="./img/instagram.png" alt="instagram" class="redes" ></a></span></li>
+              <li><a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" alt="twitter" class="redes"></a></span></li>
+              <li><a href="https://www.twitter.com" target="_blank"><img src="img/facebook.png" alt="facebok" class="redes"></a></span></li>
+            </ul> 
+          </div> 
+          <!--Bootstrap dropdown-->
+          <div class="d-flex mb-3">
+            <div class="dropown">
+              <button   class="dropown" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="quienes.html" class="dropdown-item" type="button">quienes</button></li>
+                <li><a href="clases.html" button class="dropdown-item" type="button">clases</button></li>
+                <li><a href="productos.html" button class="dropdown-item" type="button">produtos</button></li>
+                <li><a href="contacto.html"button class="dropdown-item" type="button">contacto</button></li>
+              </ul>
+            </div>  
+            <div class="p-2"><a class="ingreso" href="XXXXXX">ingreso</a></div>
+            <div class="p-2"><a href="XXXXXX">registrarse</a></div>
+          </div>
+           
+         <!--esto iría en el margen superior izquierdo-->
+     
+     
+         </nav>
+        </header>
+         <main  id="Main" class="contianer" >
+
+         <div  class="card bg-dark text-white flexDiv">
+            <img class="mainImg"  src="img/flor.jpeg" class="card-img" alt="flor">
+            <div   class="card-img-overlay">
+              <h5 class="card-title"><a href="quienes.html">quiénes somos</a></h5>
+            </div>
+          </div>
+          <div class="card bg-dark text-white flexDiv">
+            <img class="mainImg" src="img/circulo.jpeg" class="card-img" alt="circulo">
+            <div  class="card-img-overlay">
+              <h5 class="card-title"><a href="productos.html">productos</a></h5>
+              
+            </div>
+          </div>
+          <div class="card bg-dark text-white flexDiv">
+            <img class="mainImg" src="img/luna.jpeg" class="card-img" alt="flor">
+            <div class="card-img-overlay">
+              <h5 class="card-title"><a href="clases.html">clases</a></h5>
+             
+            </div>
+          </div>
+          <div class="card bg-dark text-white flexDiv">
+            <img class="mainImg" src="img/estrella.jpeg" class="card-img" alt="estrella">
+            <div  class="card-img-overlay">
+              <h5 class="card-title"><a href="contacto.html">contacto</a></h5>
+              
+            </div>
+          </div>
+           <!---esto debería ir uno al lado del otro con una imagen arriba de la palabra, ambas cosas clickeables
+           <section class="mainImg">
+             <span><a href="quienes.html"><img src="img/flor.jpeg" alt="flor" width="100px"></a></span>
+             <span><a href="productos.html"><img src="img/circulo.jpeg" alt="circulo" width="100px"></a></span>
+             <span><a href="clases.html"><img src="img/luna.jpeg" alt="luna" width="100px"></a></span>
+             <span><a href="contacto.html"><img src="img/estrella.jpeg" alt="estrella" width="100px"></a></span>
+
+           </section>
+           <section class="mainLinks">
+               
+            <span><h4><a href="quienes.html">quienes somos</a></h4></span>
+            <span><h4><a href="productos.html">productos</a></h4></span>
+            <span><h4><a href="clases.html">clases</a></h4></span>
+            <span><h4><a href="contacto.html">contacto</a></h4></span> 
+           </section>-->
+
+         </main>
+     <!--el logo me gustaría que sea clickeable y vaya sobre un video -->
+     <section class="divTitulo">
+      <div ><h1>CLEMAT</h1></div>
+      <div><h3>★ Yoga & mindfullnes para niños</h3></div>
+     </section> 
+     <footer id="pie" >
+         <ul>
+             <li>condiciones legales</li>
+             <li>privacidad</li>
+             <li><a href="contacto.html"><span>contacto</span></a></li>
+         </ul>
+         <h6>domicilio legal Av.Bla bla bla bla</h6>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+     </footer>
+    
+</body>
+
+</html>
